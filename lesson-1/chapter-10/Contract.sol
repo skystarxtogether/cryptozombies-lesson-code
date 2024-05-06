@@ -12,6 +12,8 @@ contract ZombieFactory {
 
     Zombie[] public zombies;
 
+    /// @param  _name   zombie's name
+    /// @param  dna zombie's dna
     function _createZombie(string _name, uint _dna) private {
         zombies.push(Zombie(_name, _dna));
     }
